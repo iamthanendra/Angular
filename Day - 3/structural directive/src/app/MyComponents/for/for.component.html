@@ -1,0 +1,9 @@
+<p>Items are</p>
+<ul *ngFor="let item of items; index as i; count as c; first as firstItem; last as lastItem">
+    <li>Total Items are {{c}}</li>
+
+    <li>{{i}} - {{item}} 
+        <span *ngIf="firstItem" >It is first element</span> 
+        <span *ngIf="lastItem">It is last element</span>
+    </li>
+</ul>
