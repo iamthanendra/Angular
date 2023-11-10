@@ -1,0 +1,8 @@
+<div style="display: flex; justify-content: center; padding: 30px; background-color: lightgray;">
+    <button style="background-color: aquamarine;padding: 30px;font-size: 20px;" (click)="approval(true)">Approved</button>
+    <button style="background-color: lightcoral;padding: 30px;font-size: 20px;" (click)="approval(false)">Reject</button>
+</div>
+<h1 style="text-align: center;" *ngIf="isApproved; else notapproved">Your Application is Approved</h1>
+<ng-template #notapproved>
+    <h1 style="text-align: center;" >Your Application is Rejected</h1>
+</ng-template>
