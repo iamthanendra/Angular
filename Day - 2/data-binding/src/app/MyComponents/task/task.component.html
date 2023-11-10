@@ -1,0 +1,7 @@
+<input type="text" [(ngModel)]="inputValue" (input)="verify()" [disabled]="disabled" />
+<p><i><small>Note: If Input box value will be "Submitted" then input box will be disabled</small></i></p>
+<p>Your Value : {{inputValue}}</p>
+
+<input type="text" [value]="myvalue" /> one way example : without ngModel<br>
+<p>This will update this value , we have to use event binding to</p>
+{{myvalue}}
