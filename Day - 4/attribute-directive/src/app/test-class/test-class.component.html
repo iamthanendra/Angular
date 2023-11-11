@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row mx-auto">
+        <div class="col-6 mx-auto">
+            <p class="display-5 text-center">Attribute Directive - ngClass</p>
+            <div class="d-flex justify-content-center" [ngClass]="backgroundColor">
+                Click any button to highlight me!
+            </div>
+            <div class="d-flex justify-content-center p-2">
+                <div class="btn-group">
+                    <button class="btn btn-danger" (click)="changeBG('danger')">Red</button>
+                    <button class="btn btn-success" (click)="changeBG('success')">Green</button>
+                    <button class="btn btn-primary" (click)="changeBG('primary')">Blue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
